@@ -8,9 +8,8 @@ ENV REQUEST_ORIGIN=http://localhost:5000
 
 COPY . .
 
-RUN go build
-
-RUN useradd -m appuser
+RUN go build && \
+    useradd -m appuser
 
 USER appuser
 

@@ -6,13 +6,10 @@ EXPOSE 5000
 
 COPY . .
 
-RUN npm install
-
-RUN REACT_APP_BACKEND_URL=http://localhost/api npm run build
-
-RUN npm install -g serve
-
-RUN useradd -m appuser
+RUN npm install && \
+    REACT_APP_BACKEND_URL=http://localhost/api npm run build && \
+    npm install -g serve && \
+    useradd -m appuser
 
 USER appuser
 
