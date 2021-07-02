@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  app:
+    image: thanhtrungvanhuu/devopsdocker
+    ports:
+      - 5000:5000
+    container_name: node-express-app
+
+  watchtower:
+    container_name: watchtower
+    image: containrrr/watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - WATCHTOWER_POLL_INTERVAL=60
