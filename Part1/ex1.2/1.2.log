@@ -1,0 +1,53 @@
+Script started on 2021-06-29 08:34:18+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="119" LINES="90"]
+[1m[7m%[27m[1m[0m                                                                                                                       ]2;trung@HP:~/workspace/dockerPractice/devopsWithDocker/Part1]1;..hDocker/Part1[0m[27m[24m[J
+[1m[0m[1m[36mdockerPractice/devopsWithDocker/Part1[0m[36m[39m[1m [0m
+[1m[0m[1m[32m➜ [0m[32m[39m[1m[0m[K[?1h=[?2004h[32md[39m[90mocker ps -a[39m[11D[33md[33mo[39m[1m[31md[1m[31mo[1m[31mc[0m[39m[1m[31mc[1m[31mk[0m[39m[1m[31mk[1m[31me[0m[39m[0m[32md[0m[32mo[0m[32mc[0m[32mk[0m[32me[32mr[39m[39m [39ms[90mt[90mo[90mp[90m [90ma77 57e[39m[11D[39mt[39mp[39m [39m [39m [39m [39m [39m [39m [39m [39m [9D[ [90mo[90mp a77 57e[39m[10D[39mo[39mp[39m [90m [90mp[90mo[90mt[90mp[90ms[90m [90m-[90ma[39m[39m [39m [39m [39m [39m [39m [39m [12D[90m [1m[31md[1m[31mo[1m[31mc[1m[31mk[1m[31me[0m[39m[90mr[1m[31mk[0m[39m[0m[90me[1m[31mc[0m[39m[0m[90mk[0m[33md[0m[33mo[39m[0m[90mc[32md[39m[90mo[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[32md[39m[90mocker ps -a[39m[11D[33md[33mo[39m[1m[31md[1m[31mo[1m[31mc[0m[39m[1m[31mc[1m[31mk[0m[39m[1m[31mk[1m[31me[0m[39m[0m[32md[0m[32mo[0m[32mc[0m[32mk[0m[32me[32mr[39m[39m [39mp[39ms[39m [90m [39m[39m [39m [39m [?1l>[?2004l
+]2;docker ps]1;dockerCONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS     NAMES
+38c6718f7772   nginx     "/docker-entrypoint.…"   2 minutes ago   Up 2 minutes   80/tcp    funny_brahmagupta
+[1m[7m%[27m[1m[0m                                                                                                                       ]2;trung@HP:~/workspace/dockerPractice/devopsWithDocker/Part1]1;..hDocker/Part1[0m[27m[24m[J
+[1m[0m[1m[36mdockerPractice/devopsWithDocker/Part1[0m[36m[39m[1m [0m
+[1m[0m[1m[32m➜ [0m[32m[39m[1m[0m[K[?1h=[?2004h[32md[39m[90mocker ps[39m[8D[32md[32mc[39m[39m [39m [39m [39m [39m [39m [39m [32md[32mc[32mo[39m[1m[31md[1m[31mc[1m[31mo[1m[31mk[0m[39m[1m[31mk[1m[31me[0m[39m[1m[31me[1m[31mr[0m[39m[1m[31me[0m[39m[0m[39m [1m[31mk[0m[39m[0m[39m [0m[32md[0m[32mc[0m[32mo[39m[0m[39m [32md[32mc[39m[39m [32md[39m[90mo[90mcker ps[39m[8D[33md[33mo[39m[1m[31md[1m[31mo[1m[31mc[0m[39m[1m[31mc[1m[31mk[0m[39m[1m[31mk[1m[31me[0m[39m[0m[32md[0m[32mo[0m[32mc[0m[32mk[0m[32me[32mr[39m[39m [39ms[90mt[90mop a77 57e[39m[11D[39mt[39mo[39mp[39m [39m3[90ma[90mb[90m5[90me[90m9[90me[90m43a53[39m[11D[39m8[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [10Dc[?1l>[?2004l
+]2;docker stop 38c]1;docker38c
+[1m[7m%[27m[1m[0m                                                                                                                       ]2;trung@HP:~/workspace/dockerPractice/devopsWithDocker/Part1]1;..hDocker/Part1[0m[27m[24m[J
+[1m[0m[1m[36mdockerPractice/devopsWithDocker/Part1[0m[36m[39m[1m [0m
+[1m[0m[1m[32m➜ [0m[32m[39m[1m[0m[K[?1h=[?2004h[32md[39m[90mocker stop 38c[39m[14D[33md[33mo[39m[1m[31md[1m[31mo[1m[31mc[0m[39m[1m[31mc[1m[31mk[0m[39m[1m[31mk[1m[31me[0m[39m[0m[32md[0m[32mo[0m[32mc[0m[32mk[0m[32me[32mr[39m[39m [39mp[90ms[39m[39m [39m [39m [39m [39m [39m [39mr[90mune[39m[39mi[39m [39m [90mu[90mne[39m[39mu[39mn[39me [90me[39m[90mn[90mu[90ms[39m[39m [39m [39m [39ms[90ms[39m[90ms[90mt[90mop 38c[39m[8D[39mc[90mo[90mn[90mt[90ma[90mi[90mn[90me[90mr ls -a[39m[14D[39mo[39mn[39mt[39ma[39mi[39mn[39me[39mr[39m [39mp[90mr[90mu[90mn[90me[39m[39mr[39mn[39m [39m e  [90mu[90mne[39m[39mu[39mn[39me [90me[39m[90mn[90mu[90mr[90ml[90ms[90m [90m-[90ma[39m[90m [90mr[90me[90mn[90mi[90ma[90mt[90mn[90mo[90ms[90mt[90mo[90mp[90m [90m3[90m8[90mc[39m[39m [39m [39m [39m [39m [39m [39m [15D[39mp[90ms[39m[39m [39m [39m [39m [39m [39m [39ms [90m-a[39m[39m [39m  [90m-a[39m[39m-[39ma [90m| grep mongodb[39m[14D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [15D[?1l>[?2004l
+]2;docker ps -a]1;dockerCONTAINER ID   IMAGE                                 COMMAND                   CREATED         STATUS                       PORTS     NAMES
+a770dea8855e   nginx                                 "/docker-entrypoint.…"    3 minutes ago   Exited (0) 3 minutes ago               unruffled_swanson
+57e3b3a69fe9   nginx                                 "/docker-entrypoint.…"    3 minutes ago   Exited (0) 3 minutes ago               gracious_heyrovsky
+38c6718f7772   nginx                                 "/docker-entrypoint.…"    3 minutes ago   Exited (0) 37 seconds ago              funny_brahmagupta
+baa738fa3a20   nginx                                 "/docker-entrypoint.…"    4 minutes ago   Exited (127) 4 minutes ago             beautiful_perlman
+15c6b37baa58   nginx                                 "/docker-entrypoint.…"    4 minutes ago   Exited (127) 4 minutes ago             practical_tereshkova
+7d8ba051ab8f   nginx                                 "/docker-entrypoint.…"    4 minutes ago   Exited (127) 4 minutes ago             nice_hodgkin
+1a3851e3946c   nginx                                 "/docker-entrypoint.…"    5 minutes ago   Exited (0) 5 minutes ago               priceless_mcnulty
+441e59d518bd   nginx                                 "/docker-entrypoint.…"    5 minutes ago   Exited (0) 5 minutes ago               sharp_lalande
+9a2ba632ce0b   nginx                                 "/docker-entrypoint.…"    6 minutes ago   Exited (0) 5 minutes ago               naughty_mestorf
+d7f4f35c8377   gcr.io/k8s-minikube/kicbase:v0.0.23   "/usr/local/bin/entr…"    8 days ago      Exited (137) 21 hours ago              minikube
+609035f81e10   7dfaffbc105f                          "/bin/sh -c 'if [ \"$…"   8 days ago      Exited (2) 8 days ago                  pedantic_cray
+[1m[7m%[27m[1m[0m                                                                                                                       ]2;trung@HP:~/workspace/dockerPractice/devopsWithDocker/Part1]1;..hDocker/Part1[0m[27m[24m[J
+[1m[0m[1m[36mdockerPractice/devopsWithDocker/Part1[0m[36m[39m[1m [0m
+[1m[0m[1m[32m➜ [0m[32m[39m[1m[0m[K[?1h=[?2004h[32md[39m[90mocker ps -a[39m[11D[33md[33mo[39m[1m[31md[1m[31mo[1m[31mc[0m[39m[1m[31mc[1m[31mk[0m[39m[1m[31mk[1m[31me[0m[39m[0m[32md[0m[32mo[0m[32mc[0m[32mk[0m[32me[32mr[39m[39m [90m [39m[39m [39mr[90mm[2C[90mf[90m 24633 -v[39m[13D[90mp[90ms[2C[90ma[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [14D[90m [39m[39m [39mc[90mo[90mn[90mt[90ma[90miner ls -a[39m[14D[39mo[39mn[39mt[39ma[39mi[39mn[39me[39mr[39m [39ml[39ms[39m [39m-[39ma[90ma[39m[90m-[90m [90ms[90ml[39m[39mp[90mr[90mu[90mn[90me[39m[39mr[39mu[39mn[39me [?1l>[?2004l
+]2;docker container prune]1;dockerWARNING! This will remove all stopped containers.
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+a770dea8855e0649a28eb9e4a06f36dbd0d69a81737178c681843c81b331cdce
+57e3b3a69fe9da104f4fa399f5732a1cde72dd48a29149db6e4c1cf6ab318de0
+38c6718f7772d611e2e67e420fa98f397bab4708501945364188db1533902585
+baa738fa3a20e769714a74da2ae4282e4cbf725c905f3b98e9073db4f27a9fdd
+15c6b37baa58348b930c2df550cb246ad7397da33d5ffd54aac397498d5fa0aa
+7d8ba051ab8f8c4604319c2cbc253f6b33d28443734ca2e810235152378954af
+1a3851e3946c61cb4bd40136c41257120da853f0449333c31ae5c1cb24e918a6
+441e59d518bd9fadf4c6539f949475624acaf761f498fb7edc4d7e4daae4a3c3
+9a2ba632ce0bd20b3bc3f0f4c0f639b58c219f28d3889fc346574f92a68621a1
+d7f4f35c83777445afee87bbfe3ac6f62c707ae4707a06eb41c104326a47de13
+609035f81e10fbd8bb3f7c7753e3869ee37d3ec1ba1a03467b7199b5b71b3f12
+
+Total reclaimed space: 3.536MB
+[1m[7m%[27m[1m[0m                                                                                                                       ]2;trung@HP:~/workspace/dockerPractice/devopsWithDocker/Part1]1;..hDocker/Part1[0m[27m[24m[J
+[1m[0m[1m[36mdockerPractice/devopsWithDocker/Part1[0m[36m[39m[1m [0m[1mtook [0m[1m[33m5s[0m[33m[39m[1m [0m
+[1m[0m[1m[32m➜ [0m[32m[39m[1m[0m[K[?1h=[?2004h[32md[39m[90mocker container prune[39m[21D[33md[33mo[39m[1m[31md[1m[31mo[1m[31mc[0m[39m[1m[31mc[1m[31mk[0m[39m[1m[31mk[1m[31me[0m[39m[0m[32md[0m[32mo[0m[32mc[0m[32mk[0m[32me[32mr[39m[39m [39mp[90ms[90m [90m-[90ma[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [14D[39ms[39m [39ma[90m-[39m[39m-[90m-[39m[90m-[90ma[39m[39ma[90m-[39m[39m- [90m-[39m[90m-[90ma[39m[39m-[39ma [90m| grep mongodb[39m[14D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [15D[90ma[39m[90m-[90m [90ms[90mc[90mo[90mn[90mt[90ma[90miner prune[39m[15D[39mc[39mo[39mn[39mt[39ma[39mi[39mn[39me[39mr[39m [39ml[90ms[90m [90m-[90ma[39m[39ms[39m [39m-[39ma [?1l>[?2004l
+]2;docker container ls -a]1;dockerCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[1m[7m%[27m[1m[0m                                                                                                                       ]2;trung@HP:~/workspace/dockerPractice/devopsWithDocker/Part1]1;..hDocker/Part1[0m[27m[24m[J
+[1m[0m[1m[36mdockerPractice/devopsWithDocker/Part1[0m[36m[39m[1m [0m
+[1m[0m[1m[32m➜ [0m[32m[39m[1m[0m[K[?1h=[?2004h[1m[31me[0m[39m[90mxit[39m[0m[32me[32mx[39m[1m[31me[1m[31mx[1m[31mi[0m[39m[0m[32me[0m[32mx[0m[32mi[32mt[39m [?1l>[?2004l
+]2;exit]1;exit
+Script done on 2021-06-29 08:35:48+03:00 [COMMAND_EXIT_CODE="0"]

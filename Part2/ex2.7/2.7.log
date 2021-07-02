@@ -1,0 +1,103 @@
+Script started on 2021-07-01 10:14:53+03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="62" LINES="49"]
+[1m[7m%[27m[1m[0m                                                              ]2;trung@HP:~/workspace/dockerPractice/devopsWithDocker/Part2/ex2.7]1;..r/Part2/ex2.7[0m[27m[24m[J
+[1m[0m[1m[36mdevopsWithDocker/Part2/ex2.7[0m[36m[39m[1m [0m[1mon [0m[1m[36m🐳 v20.10.7[0m[36m[39m[1m [0m
+[1m[0m[1m[32m➜ [0m[32m[39m[1m[0m[K[?1h=[?2004h[32md[39m[90mocker-compose down -v[39m[21D[33md[33mo[39m[1m[31md[1m[31mo[1m[31mc[0m[39m[1m[31mc[1m[31mk[0m[39m[1m[31mk[1m[31me[0m[39m[0m[32md[0m[32mo[0m[32mc[0m[32mk[0m[32me[32mr[32m-[32mc[32mo[32mm[32mp[32mo[32ms[32me[39m[39m [39md[39mo[39mw[39mn[39m [39m-[39mv[90mv[39m[90m-[90m [90mn[39m[4md[4mo[24m[90mw[39m[4md[24m[24m[90mo[24m[90md[39m[39mu[90mp[39m[39m [39m [39m [39m [39m [39mp[?1l>[?2004l
+]2;docker-compose up]1;docker-composeCreating network "ex27_default" with the default driver
+Creating volume "ex27_model" with default driver
+Creating volume "ex27_imgs" with default driver
+Creating training ... 
+Creating frontend ... 
+[2A[2KCreating training ... [32mdone[0m[2B[1A[2KCreating frontend ... [32mdone[0m[1BCreating backend  ... 
+[1A[2KCreating backend  ... [32mdone[0m[1BAttaching to training, frontend, backend
+[33mfrontend |[0m INFO: Accepting connections at http://localhost:3000
+[32mtraining |[0m Using TensorFlow backend.
+[36mbackend  |[0m Using TensorFlow backend.
+[36mbackend  |[0m Backend starting
+[36mbackend  |[0m No 'kurkkumopotin.sav' model in the model volume. Waiting for training service to provide one.
+[32mtraining |[0m gathering cucumbers...
+[32mtraining |[0m gathering mopeds...
+[32mtraining |[0m Epoch 1/5
+[32mtraining |[0m 2021-07-01 07:17:34.317811: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+[32mtraining |[0m 2021-07-01 07:17:34.782487: W tensorflow/core/framework/allocator.cc:108] Allocation of 512000000 exceeds 10% of system memory.
+[32mtraining |[0m 
+[32mtraining |[0m 128/593 [=====>........................] - ETA: 13s - loss: 0.7189 - acc: 0.60162021-07-01 07:17:37.948570: W tensorflow/core/framework/allocator.cc:108] Allocation of 512000000 exceeds 10% of system memory.
+[32mtraining |[0m 
+[32mtraining |[0m 256/593 [===========>..................] - ETA: 8s - loss: 0.8601 - acc: 0.6133 2021-07-01 07:17:41.087692: W tensorflow/core/framework/allocator.cc:108] Allocation of 512000000 exceeds 10% of system memory.
+[32mtraining |[0m 
+[32mtraining |[0m 384/593 [==================>...........] - ETA: 5s - loss: 1.2132 - acc: 0.58072021-07-01 07:17:44.243477: W tensorflow/core/framework/allocator.cc:108] Allocation of 512000000 exceeds 10% of system memory.
+[32mtraining |[0m 
+[32mtraining |[0m 512/593 [========================>.....] - ETA: 2s - loss: 1.0413 - acc: 0.62702021-07-01 07:17:47.370443: W tensorflow/core/framework/allocator.cc:108] Allocation of 324000000 exceeds 10% of system memory.
+[32mtraining |[0m 
+[32mtraining |[0m 593/593 [==============================] - 15s 25ms/step - loss: 1.0204 - acc: 0.6358
+[32mtraining |[0m Epoch 2/5
+[32mtraining |[0m 
+[32mtraining |[0m 128/593 [=====>........................] - ETA: 11s - loss: 0.4722 - acc: 0.8047
+[32mtraining |[0m 256/593 [===========>..................] - ETA: 8s - loss: 0.4291 - acc: 0.8359 
+[32mtraining |[0m 384/593 [==================>...........] - ETA: 5s - loss: 0.4019 - acc: 0.8333
+[32mtraining |[0m 512/593 [========================>.....] - ETA: 1s - loss: 0.3634 - acc: 0.8535
+[32mtraining |[0m 593/593 [==============================] - 15s 25ms/step - loss: 0.3509 - acc: 0.8634
+[32mtraining |[0m Epoch 3/5
+[32mtraining |[0m 
+[32mtraining |[0m 128/593 [=====>........................] - ETA: 12s - loss: 0.1716 - acc: 0.9453
+[32mtraining |[0m 256/593 [===========>..................] - ETA: 8s - loss: 0.2005 - acc: 0.9297 
+[32mtraining |[0m 384/593 [==================>...........] - ETA: 5s - loss: 0.2306 - acc: 0.9193
+[32mtraining |[0m 512/593 [========================>.....] - ETA: 2s - loss: 0.2671 - acc: 0.9082
+[32mtraining |[0m 593/593 [==============================] - 16s 27ms/step - loss: 0.2573 - acc: 0.9106
+[32mtraining |[0m Epoch 4/5
+[32mtraining |[0m 
+[32mtraining |[0m 128/593 [=====>........................] - ETA: 11s - loss: 0.1512 - acc: 0.9531
+[32mtraining |[0m 256/593 [===========>..................] - ETA: 8s - loss: 0.1900 - acc: 0.9297 
+[32mtraining |[0m 384/593 [==================>...........] - ETA: 5s - loss: 0.2069 - acc: 0.9141
+[32mtraining |[0m 512/593 [========================>.....] - ETA: 2s - loss: 0.2142 - acc: 0.9121
+[32mtraining |[0m 593/593 [==============================] - 15s 25ms/step - loss: 0.2202 - acc: 0.9106
+[32mtraining |[0m Epoch 5/5
+[32mtraining |[0m 
+[32mtraining |[0m 128/593 [=====>........................] - ETA: 11s - loss: 0.2048 - acc: 0.9141
+[32mtraining |[0m 256/593 [===========>..................] - ETA: 8s - loss: 0.1882 - acc: 0.9258 
+[32mtraining |[0m 384/593 [==================>...........] - ETA: 5s - loss: 0.1706 - acc: 0.9323
+[32mtraining |[0m 512/593 [========================>.....] - ETA: 2s - loss: 0.1682 - acc: 0.9297
+[32mtraining |[0m 593/593 [==============================] - 15s 25ms/step - loss: 0.1572 - acc: 0.9342
+[32mtraining |[0m 
+[32mtraining |[0m  32/293 [==>...........................] - ETA: 2s
+[32mtraining |[0m  64/293 [=====>........................] - ETA: 1s
+[32mtraining |[0m  96/293 [========>.....................] - ETA: 1s
+[32mtraining |[0m 128/293 [============>.................] - ETA: 1s
+[32mtraining |[0m 160/293 [===============>..............] - ETA: 1s
+[32mtraining |[0m 192/293 [==================>...........] - ETA: 0s
+[32mtraining |[0m 224/293 [=====================>........] - ETA: 0s
+[32mtraining |[0m 256/293 [=========================>....] - ETA: 0s
+[32mtraining |[0m 288/293 [============================>.] - ETA: 0s
+[32mtraining |[0m 293/293 [==============================] - 2s 8ms/step
+[32mtraining exited with code 0
+[0m[36mbackend  |[0m 2021-07-01 07:18:53.986573: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+[36mbackend  |[0m  * Serving Flask app "app" (lazy loading)
+[36mbackend  |[0m  * Environment: production
+[36mbackend  |[0m    WARNING: Do not use the development server in a production environment.
+[36mbackend  |[0m    Use a production WSGI server instead.
+[36mbackend  |[0m  * Debug mode: on
+[36mbackend  |[0m  * Running on all addresses.
+[36mbackend  |[0m    WARNING: This is a development server. Do not use it in a production deployment.
+[36mbackend  |[0m  * Running on http://172.29.0.4:5000/ (Press CTRL+C to quit)
+[36mbackend  |[0m  * Restarting with stat
+[36mbackend  |[0m 2021-07-01 07:18:56.247378: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+[36mbackend  |[0m Using TensorFlow backend.
+[36mbackend  |[0m  * Debugger is active!
+[36mbackend  |[0m  * Debugger PIN: 810-020-423
+[36mbackend  |[0m 172.29.0.1 - - [01/Jul/2021 07:19:22] "POST /kurkkuvaimopo HTTP/1.1" 200 -
+[36mbackend  |[0m 172.29.0.1 - - [01/Jul/2021 07:19:30] "POST /kurkkuvaimopo HTTP/1.1" 200 -
+[36mbackend  |[0m 172.29.0.1 - - [01/Jul/2021 07:19:39] "POST /kurkkuvaimopo HTTP/1.1" 200 -
+[36mbackend  |[0m 172.29.0.1 - - [01/Jul/2021 07:20:22] "POST /kurkkuvaimopo HTTP/1.1" 200 -
+[36mbackend  |[0m 172.29.0.1 - - [01/Jul/2021 07:20:28] "POST /kurkkuvaimopo HTTP/1.1" 200 -
+[33mfrontend |[0m 
+[33mfrontend |[0m INFO: Gracefully shutting down. Please wait...
+[33mfrontend exited with code 0
+[0m[36mbackend exited with code 0
+[0m[1m[7m%[27m[1m[0m                                                              ]2;trung@HP:~/workspace/dockerPractice/devopsWithDocker/Part2/ex2.7]1;..r/Part2/ex2.7[0m[27m[24m[J
+[1m[0m[1m[36mdevopsWithDocker/Part2/ex2.7[0m[36m[39m[1m [0m[1mon [0m[1m[36m🐳 v20.10.7[0m[36m[39m[1m [0m[1mtook [0m[1m[33m5m 57s[0m[33m[39m[1m [0m
+[1m[0m[1m[32m➜ [0m[32m[39m[1m[0m[K[?1h=[?2004h[32md[39m[90mocker-compose up[39m[16D[33md[33mo[39m[1m[31md[1m[31mo[1m[31mc[0m[39m[1m[31mc[1m[31mk[0m[39m[1m[31mk[1m[31me[0m[39m[0m[32md[0m[32mo[0m[32mc[0m[32mk[0m[32me[32mr[39m[1m[31md[1m[31mo[1m[31mc[1m[31mk[1m[31me[1m[31mr[1m[31m-[0m[39m[0m[32md[0m[32mo[0m[32mc[0m[32mk[0m[32me[0m[32mr[39m[0m[90m-[1m[31md[1m[31mo[1m[31mc[1m[31mk[1m[31me[0m[39m[90mr[1m[31mk[0m[39m[0m[90me[1m[31mc[0m[39m[0m[90mk[0m[33md[0m[33mo[39m[0m[90mc[32md[39m[90mo[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [17D[1m[31me[0m[39m[90mxit[39m[0m[32me[32mx[39m[1m[31me[1m[31mx[1m[31mi[0m[39m[0m[32me[0m[32mx[0m[32mi[32mt[39m [1m[31me[1m[31mx[1m[31mi[0m[39m[90mt[39m[0m[32me[0m[32mx[39m[0m[90mi[1m[31me[0m[39m[90mx[0m[39m[39m [39m [39m [39m [32md[39m[90mocker-compose up[39m[16D[33md[33mo[39m[1m[31md[1m[31mo[1m[31mc[0m[39m[1m[31mc[1m[31mk[0m[39m[1m[31mk[1m[31me[0m[39m[0m[32md[0m[32mo[0m[32mc[0m[32mk[0m[32me[32mr[39m[39m [90mv[90mo[90ml[90mu[90mm[90me[90m [90mp[90mr[90mu[90mne[39m[12D[39mp[90ms[90m [90m-[90ma[39m[39m [39m [39m [39m [39m [39m [39m [11D[39ms[39m [39m-[39ma [?1l>[?2004l
+]2;docker ps -a]1;dockerCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[1m[7m%[27m[1m[0m                                                              ]2;trung@HP:~/workspace/dockerPractice/devopsWithDocker/Part2/ex2.7]1;..r/Part2/ex2.7[0m[27m[24m[J
+[1m[0m[1m[36mdevopsWithDocker/Part2/ex2.7[0m[36m[39m[1m [0m[1mon [0m[1m[36m🐳 v20.10.7[0m[36m[39m[1m [0m
+[1m[0m[1m[32m➜ [0m[32m[39m[1m[0m[K[?1h=[?2004h[32md[39m[90mocker ps -a[39m[11D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[1m[31me[0m[39m[90mxit[39m[0m[32me[32mx[39m[1m[31me[1m[31mx[1m[31mi[0m[39m[0m[32me[0m[32mx[0m[32mi[32mt[39m [?1l>[?2004l
+]2;exit]1;exit
+Script done on 2021-07-01 10:21:13+03:00 [COMMAND_EXIT_CODE="0"]

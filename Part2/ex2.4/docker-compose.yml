@@ -1,0 +1,26 @@
+version: '3.8'
+
+services: # In default netwokr, containers are reachable and discoverable
+  front:
+    build:
+      context: ../../material-applications/example-frontend
+      dockerfile: $PWD/Dockerfiles/Dockerfile.frontend 
+    ports:
+      - 5000:5000
+    container_name: frontend
+
+  back:
+    build:
+      context: ../../material-applications/example-backend
+      dockerfile: $PWD/Dockerfiles/Dockerfile.backend
+    environment:
+      - REDIS_HOST=redis # same as hostname, not the container_name
+    ports:
+      - 8080:8080
+    container_name: backend
+
+  redis: # hostname = container_name
+    container_name: redisdb
+    image: redis
+    ports:
+      - 6379:6379

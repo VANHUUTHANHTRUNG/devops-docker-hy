@@ -1,0 +1,142 @@
+Script started on 2021-06-29 17:11:50+03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="119" LINES="90"]
+[1m[7m%[27m[1m[0m                                                                                                                       ]2;trung@HP:~/workspace/dockerPractice/devopsWithDocker/material-applications/example-frontend]1;..mple-frontend[0m[27m[24m[J
+[1m[0m[1m[36mmaterial-applications/example-frontend[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mis [0m[1m[31m📦 v0.1.0[0m[31m[39m[1m [0m[1mvia [0m[1m[32m⬢ v14.17.0[0m[32m[39m[1m [0m[1mon [0m[1m[36m🐳 v20.10.7[0m[36m[39m[1m [0m
+[1m[0m[1m[32m➜ [0m[32m[39m[1m[0m[K[?1h=[?2004h[32md[39m[90mocker run --rm -it -p 5000:5000 --name front-end-project frontend-project[39m[73D[39md[39mc[90mo[90mc[90mk[90me[90mr[90m [90mr[90mu[90mn[90m [90m-[90m-[90mr[90mm[90m [90m-[90mi[90mt[90m [90m-[90mp[90m [90m5[2C[90m0[90m:[90m5[2C[90m0[90m [90m-[90m-[90mn[90ma[90mm[90me[90m [90mf[90mr[90mo[90mn[90mt[90m-[39m[16P[10C[90mt[90m frontend-project[39m[73D[32md[32mc[32mo[39m[1m[31md[1m[31mc[1m[31mo[1m[31mk[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [71D[1m[31mk[1m[31me[0m[39m[1m[31me[1m[31mr[0m[39m [1m[31me[0m[39m[0m[39m [1m[31mk[0m[39m[0m[39m [0m[32md[0m[32mc[0m[32mo[39m[0m[39m [32md[32mc[39m[39m [32md[39m[90mo[90mcker run --rm -it -p 5000:5000 --name front-end-project frontend-project[39m[73D[33md[33mo[39m[1m[31md[1m[31mo[1m[31mc[0m[39m[1m[31mc[1m[31mk[0m[39m[1m[31mk[1m[31me[0m[39m[0m[32md[0m[32mo[0m[32mc[0m[32mk[0m[32me[32mr[39m[39m [39mb[90mu[90mi[90ml[90md[90m [90m.[90m [90m-[39m[40P[18C                                        [66D[39mu[39mi[39ml[39md[39m [39m[4m.[24m[39m [39m-[39mt[39m [39mf[39mr[39mo[39mn[39mt[39me[39mn[39md[39m-[39mp[39mr[39mo[39mj[39me[39mc[39mt[?1l>[?2004l
+]2;docker build . -t frontend-project]1;dockerSending build context to Docker daemon  557.1kBSending build context to Docker daemon  729.6kB
+Step 1/7 : FROM node:14
+ ---> c47df8afdb4a
+Step 2/7 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> 8f27cd0bd529
+Step 3/7 : EXPOSE 5000
+ ---> Using cache
+ ---> 9fa0edde96ed
+Step 4/7 : COPY . .
+ ---> e20c2d57aa25
+Step 5/7 : RUN npm install && npm run build
+ ---> Running in 5997659b287d
+
+> core-js@2.6.12 postinstall /usr/src/app/node_modules/babel-runtime/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> core-js@3.8.1 postinstall /usr/src/app/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> core-js-pure@3.8.1 postinstall /usr/src/app/node_modules/core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> ejs@2.7.4 postinstall /usr/src/app/node_modules/ejs
+> node ./postinstall.js
+
+Thank you for installing [35mEJS[0m: built with the [32mJake[0m JavaScript build tool ([32mhttps://jakejs.com/[0m)
+
+[91mnpm WARN optional[0m[91m SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/webpack-dev-server/node_modules/fsevents):
+[0m[91mnpm[0m[91m WARN notsup[0m[91m SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+[0m[91mnpm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/watchpack-chokidar2/node_modules/fsevents):
+[0m[91mnpm [0m[91mWARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+[0m[91mnpm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.2.1 (node_modules/fsevents):
+[0m[91mnpm WARN[0m[91m notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.2.1: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+[0m[91mnpm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.3 (node_modules/chokidar/node_modules/fsevents):
+[0m[91mnpm [0m[91mWARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+[0m[91m
+[0madded 1940 packages from 766 contributors and audited 1947 packages in 32.312s
+
+125 packages are looking for funding
+  run `npm fund` for details
+
+found 5927 vulnerabilities (209 moderate, 5718 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+> example-frontend@0.1.0 build /usr/src/app
+> react-scripts build
+
+Creating an optimized production build...
+[91mBrowserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+[0mCompiled successfully.
+
+File sizes after gzip:
+
+  77.24 KB  build/static/js/2.43ca3586.chunk.js
+  1.9 KB    build/static/js/main.1be634bd.chunk.js
+  781 B     build/static/js/runtime-main.223e45fb.js
+  235 B     build/static/css/main.eaa5d75e.chunk.css
+
+The project was built assuming it is hosted at /.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  npm install -g serve
+  serve -s build
+
+Find out more about deployment here:
+
+  https://cra.link/deployment
+
+Removing intermediate container 5997659b287d
+ ---> 4a2650fa4af9
+Step 6/7 : RUN npm install -g serve
+ ---> Running in 404fbe8f8b44
+/usr/local/bin/serve -> /usr/local/lib/node_modules/serve/bin/serve.js
++ serve@12.0.0
+added 88 packages from 42 contributors in 4.169s
+Removing intermediate container 404fbe8f8b44
+ ---> 7e9e9fdb1b04
+Step 7/7 : CMD serve -s -l 5000 build
+ ---> Running in d7a83bba52ea
+Removing intermediate container d7a83bba52ea
+ ---> c7e4f8ef40e1
+Successfully built c7e4f8ef40e1
+Successfully tagged frontend-project:latest
+[1m[7m%[27m[1m[0m                                                                                                                       ]2;trung@HP:~/workspace/dockerPractice/devopsWithDocker/material-applications/example-frontend]1;..mple-frontend[0m[27m[24m[J
+[1m[0m[1m[36mmaterial-applications/example-frontend[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mis [0m[1m[31m📦 v0.1.0[0m[31m[39m[1m [0m[1mvia [0m[1m[32m⬢ v14.17.0[0m[32m[39m[1m [0m[1mon [0m[1m[36m🐳 v20.10.7[0m[36m[39m[1m [0m[1mtook [0m[1m[33m1m 13s[0m[33m[39m[1m [0m
+[1m[0m[1m[32m➜ [0m[32m[39m[1m[0m[K[?1h=[?2004h[32md[39m[90mocker build . -t frontend-project[39m[33D[39md[39mo[90mo[90mc[90mk[90me[90mr[90m [90mb[90mu[90mi[90ml[90md[90m [90m.[90m [90m-[90mt[90m [90mf[90mr[90mo[90mn[90mt[90me[90mn[90md[90m-[90mp[90mr[90mo[90mj[90me[90mc[90mt[39m[33D[1m[31md[1m[31mo[1m[31mp[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [32D[0m[33md[0m[33mo[39m[0m[90mc[90mker build . -t frontend-project[39m[32D[32md[39m[90mo[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [34D[32md[39m[90mocker build . -t frontend-project[39m[33D[33md[33mo[39m[1m[31md[1m[31mo[1m[31mc[0m[39m[1m[31mc[1m[31mk[0m[39m[1m[31mk[1m[31me[0m[39m[0m[32md[0m[32mo[0m[32mc[0m[32mk[0m[32me[32mr[39m[39m [39mr[90mu[90mn[90m [90m-[90m-[90mr[90mm[90m [90m-[90mi[90mt[90m [90m-[90mp[90m [90m5[90m0[90m0[90m0[90m:[90m5[90m0[90m0[90m0[90m [90m-[90m-name front-end-project frontend-project[39m[66D[39mu[39mn[39m [39m-[39m-[39mr[39mm[39m [39m-[39mi[39mt[39m [39m-[39mp[39m [39m5[39m0[39m0[39m0[39m:[39m5[39m0[39m0[39m0[39m [39m-[39m-[39mn[39ma[39mm[39me[39m [39mf[39mr[39mo[39mn[39mt[39m-[39me[39mn[39md[39m-[39mp[39mr[39mo[39mj[39me[39mc[39mt[39m [39mf[39mr[39mo[39mn[39mt[39me[39mn[39md[39m-[39mp[39mr[39mo[39mj[39me[39mc[39mt[?1l>[?2004l
+]2;docker run --rm -it -p 5000:5000 --name front-end-project frontend-project]1;docker[31mERROR:[39m Cannot copy to clipboard: Couldn't find the `xsel` binary and fallback didn't work. On Debian/Ubuntu you can install xsel with: sudo apt install xsel
+[32m[39m
+[32m   ┌───────────────────────────────────┐[39m
+   [32m│[39m                                   [32m│[39m
+   [32m│[39m   [32mServing![39m                        [32m│[39m
+   [32m│[39m                                   [32m│[39m
+   [32m│[39m   [1mLocal:[22m  http://localhost:5000   [32m│[39m
+   [32m│[39m                                   [32m│[39m
+[32m   └───────────────────────────────────┘[39m
+[32m[39m
+^C
+[35mINFO:[39m Gracefully shutting down. Please wait...
+[1m[7m%[27m[1m[0m                                                                                                                       ]2;trung@HP:~/workspace/dockerPractice/devopsWithDocker/material-applications/example-frontend]1;..mple-frontend[0m[27m[24m[J
+[1m[0m[1m[36mmaterial-applications/example-frontend[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mis [0m[1m[31m📦 v0.1.0[0m[31m[39m[1m [0m[1mvia [0m[1m[32m⬢ v14.17.0[0m[32m[39m[1m [0m[1mon [0m[1m[36m🐳 v20.10.7[0m[36m[39m[1m [0m[1mtook [0m[1m[33m12s[0m[33m[39m[1m [0m
+[1m[0m[1m[32m➜ [0m[32m[39m[1m[0m[K[?1h=[?2004h[1m[31me[0m[39m[90mx1.12[39m[0m[32me[32mx[39m[1m[31me[1m[31mx[1m[31mi[0m[39m[90mt[39m[39m [39m [0m[32me[0m[32mx[0m[32mi[32mt[39m [?1l>[?2004l
+]2;exit]1;exit
+Script done on 2021-06-29 17:13:39+03:00 [COMMAND_EXIT_CODE="0"]

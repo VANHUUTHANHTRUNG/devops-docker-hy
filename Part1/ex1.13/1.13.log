@@ -1,0 +1,92 @@
+Script started on 2021-06-29 17:24:09+03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="119" LINES="90"]
+[1m[7m%[27m[1m[0m                                                                                                                       ]2;trung@HP:~/workspace/dockerPractice/devopsWithDocker/material-applications/example-backend]1;..ample-backend[0m[27m[24m[J
+[1m[0m[1m[36mmaterial-applications/example-backend[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mon [0m[1m[36m🐳 v20.10.7[0m[36m[39m[1m [0m
+[1m[0m[1m[32m➜ [0m[32m[39m[1m[0m[K[?1h=[?2004h[32mscript[39m [4m1.13.log[24m[15D[32mc[32ml[32me[32ma[32mr[39m[39m  [24m [24m [24m [24m [24m [24m [24m [24m [10D[32ml[32ms[39m[39m [39m [39m [1m[31me[1m[31mx[1m[31m1.13[0m[39m[0m[32m.[0m[32m.[39m[0m[39m [0m[39m [0m[39m [0m[39m [32ml[32ms[39m[1m[31me[1m[31mx[1m[31m1.12[0m[39m[0m[32m.[0m[32m.[39m[0m[39m [0m[39m [0m[39m [0m[39m [32mc[32ml[32mear[39m [32md[32mo[32mc[32mk[32me[32mr[39m ps -a[12D[32mc[32ml[32me[32ma[32mr[39m[39m       [32md[32mo[32mc[32mk[32me[32mr[39m run --rm -it -p 8080:8080 --name backend-project backend-project[64Dbuild [4m.[24m -[38P[17C                                      [38D[?1l>[?2004l
+]2;docker build . -t backend-project]1;dockerSending build context to Docker daemon  43.01kB
+Step 1/7 : FROM golang:1.16
+ ---> ee23292e2826
+Step 2/7 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> ce5eec60fb88
+Step 3/7 : EXPOSE 8080
+ ---> Using cache
+ ---> 73acba4d2ca4
+Step 4/7 : COPY . .
+ ---> 136f3489e7d5
+Step 5/7 : RUN go build
+ ---> Running in 2e53131476d3
+[91mgo: downloading github.com/gin-contrib/cors v1.3.1
+[0m[91mgo: downloading github.com/gin-gonic/gin v1.6.3
+[0m[91mgo: downloading github.com/go-redis/redis/v8 v8.4.2
+[0m[91mgo: downloading github.com/go-pg/pg/v10 v10.7.3
+[0m[91mgo: downloading github.com/gin-contrib/sse v0.1.0
+[0m[91mgo: downloading github.com/mattn/go-isatty v0.0.12
+[0m[91mgo: downloading github.com/cespare/xxhash/v2 v2.1.1
+[0m[91mgo: downloading github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f
+[0m[91mgo: downloading go.opentelemetry.io/otel v0.14.0
+[0m[91mgo: downloading github.com/go-playground/validator/v10 v10.2.0
+[0m[91mgo: downloading github.com/golang/protobuf v1.4.3
+[0m[91mgo: downloading github.com/ugorji/go v1.1.7
+go: downloading gopkg.in/yaml.v2 v2.3.0
+[0m[91mgo: downloading golang.org/x/sys v0.0.0-20201119102817-f84b799fce68
+[0m[91mgo: downloading github.com/go-pg/zerochecker v0.2.0
+[0m[91mgo: downloading github.com/ugorji/go/codec v1.1.7
+[0m[91mgo: downloading github.com/jinzhu/inflection v1.0.0
+[0m[91mgo: downloading github.com/vmihailenco/msgpack/v5 v5.0.0
+[0m[91mgo: downloading github.com/vmihailenco/tagparser v0.1.2
+[0m[91mgo: downloading mellium.im/sasl v0.2.1
+[0m[91mgo: downloading github.com/go-playground/universal-translator v0.17.0
+[0m[91mgo: downloading github.com/leodido/go-urn v1.2.0
+[0m[91mgo: downloading google.golang.org/protobuf v1.25.0
+[0m[91mgo: downloading github.com/tmthrgd/go-hex v0.0.0-20190904060850-447a3041c3bc
+[0m[91mgo: downloading github.com/vmihailenco/bufpool v0.1.11
+[0m[91mgo: downloading golang.org/x/crypto v0.0.0-20201117144127-c1f2f97bffc9
+[0m[91mgo: downloading github.com/go-playground/locales v0.13.0
+[0mRemoving intermediate container 2e53131476d3
+ ---> 61ab6653ea87
+Step 6/7 : RUN go test ./...
+ ---> Running in e047b2df303a
+ok  	server	0.007s
+?   	server/cache	[no test files]
+ok  	server/common	0.001s
+?   	server/controller	[no test files]
+?   	server/pgconnection	[no test files]
+?   	server/router	[no test files]
+Removing intermediate container e047b2df303a
+ ---> ae3ccac43da5
+Step 7/7 : CMD ./server
+ ---> Running in bc5fd0c8f62f
+Removing intermediate container bc5fd0c8f62f
+ ---> 47a367c204ea
+Successfully built 47a367c204ea
+Successfully tagged backend-project:latest
+[1m[7m%[27m[1m[0m                                                                                                                       ]2;trung@HP:~/workspace/dockerPractice/devopsWithDocker/material-applications/example-backend]1;..ample-backend[0m[27m[24m[J
+[1m[0m[1m[36mmaterial-applications/example-backend[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mon [0m[1m[36m🐳 v20.10.7[0m[36m[39m[1m [0m[1mtook [0m[1m[33m23s[0m[33m[39m[1m [0m
+[1m[0m[1m[32m➜ [0m[32m[39m[1m[0m[K[?1h=[?2004h[32mdocker[39m build [4m.[24m -t backend-project[33D[32ms[32mc[32mr[32mi[32mp[32mt[39m [4m1[4m.[4m1[4m3[4m.[4ml[4mo[4mg[24m                  [18D[15D[32mc[32ml[32me[32ma[32mr[39m[39m  [24m [24m [24m [24m [24m [24m [24m [24m [10D[32ml[32ms[39m[39m [39m [39m [1m[31me[1m[31mx[1m[31m1.13[0m[39m[0m[32m.[0m[32m.[39m[0m[39m [0m[39m [0m[39m [0m[39m [32ml[32ms[39m[1m[31me[1m[31mx[1m[31m1.12[0m[39m[0m[32m.[0m[32m.[39m[0m[39m [0m[39m [0m[39m [0m[39m [32mc[32ml[32mear[39m [32md[32mo[32mc[32mk[32me[32mr[39m ps -a[12D[32mc[32ml[32me[32ma[32mr[39m[39m       [32md[32mo[32mc[32mk[32me[32mr[39m run --rm -it -p 8080:8080 --name backend-project backend-project[?1l>[?2004l
+]2;docker run --rm -it -p 8080:8080 --name backend-project backend-project]1;docker[Ex 2.4+] REDIS_HOST env was not passed so redis connection is not initialized
+[Ex 2.6+] POSTGRES_HOST env was not passed so postgres connection is not initialized
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /ping                     --> server/router.pingpong (4 handlers)
+[GIN-debug] GET    /messages                 --> server/controller.GetMessages (4 handlers)
+[GIN-debug] POST   /messages                 --> server/controller.CreateMessage (4 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN] 2021/06/29 - 14:25:01 |[97;42m 200 [0m|     201.562µs |      172.17.0.1 |[97;44m GET     [0m "/ping"
+^C[1m[7m%[27m[1m[0m                                                                                                                       ]2;trung@HP:~/workspace/dockerPractice/devopsWithDocker/material-applications/example-backend]1;..ample-backend[0m[27m[24m[J
+[1m[0m[1m[36mmaterial-applications/example-backend[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mon [0m[1m[36m🐳 v20.10.7[0m[36m[39m[1m [0m[1mtook [0m[1m[33m51s[0m[33m[39m[1m [0m
+[1m[0m[1m[31m➜ [0m[31m[39m[1m[0m[K[?1h=[?2004h[4mc[24m[90mlear[39m[24m[1m[31mc[1m[31ml[0m[39m[1m[31mc[1m[31ml[1m[31me[0m[39m[1m[31me[1m[31ma[0m[39m[0m[32mc[0m[32ml[0m[32me[0m[32ma[32mr[39m [?1l>[?2004l
+]2;clear]1;clear[H[2J[3J[1m[7m%[27m[1m[0m                                                                                                                       ]2;trung@HP:~/workspace/dockerPractice/devopsWithDocker/material-applications/example-backend]1;..ample-backend[0m[27m[24m[J
+[1m[0m[1m[36mmaterial-applications/example-backend[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mon [0m[1m[36m🐳 v20.10.7[0m[36m[39m[1m [0m
+[1m[0m[1m[32m➜ [0m[32m[39m[1m[0m[K[?1h=[?2004h[1m[31mm[0m[39m[90mv Dockerfile 1.12.log ../../Part1/ex1.12[39m[40D[0m[32mm[32mv[39m[39m [39m[4mD[39m[4mo[39m[4mc[39m[4mk[39m[4me[39m[4mr[39m[4mf[39m[4mi[39m[4ml[39m[4me[24m[39m [39m1[39m.[39m1[39m2[39m.[39ml[39mo[39mg[39m [39m[4m.[39m[4m.[39m[4m/[39m[4m.[39m[4m.[39m[4m/[39m[4mP[39m[4ma[39m[4mr[39m[4mt[39m[4m1[39m[4m/[39m[4me[39m[4mx[39m[4m1[39m[4m.[39m[4m1[39m[4m2[24m[1C[1C[P[23C [24D[4m1[4m.[4m1[4m3[4m.[4ml[4mo[4mg[24m[24m [4m.[4m.[4m/[4m.[4m.[4m/[4mP[4ma[4mr[4mt[4m1[4m/[4me[4mx[4m1[4m.[4m1[4m2[24m[23D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[4m1[24m[24m [4m1[4m3[24m[?1l>[?2004l
+]2;mv Dockerfile 1.13.log ../../Part1/ex1.13]1;mv[1m[7m%[27m[1m[0m                                                                                                                       ]2;trung@HP:~/workspace/dockerPractice/devopsWithDocker/material-applications/example-backend]1;..ample-backend[0m[27m[24m[J
+[1m[0m[1m[36mmaterial-applications/example-backend[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[0m[39m[1m [0m
+[1m[0m[1m[32m➜ [0m[32m[39m[1m[0m[K[?1h=[?2004h[4mc[24m[90mlear[39m[24m[1m[31mc[1m[31ml[0m[39m[1m[31mc[1m[31ml[1m[31me[0m[39m[1m[31me[1m[31ma[0m[39m[0m[32mc[0m[32ml[0m[32me[0m[32ma[32mr[39m [?1l>[?2004l
+]2;clear]1;clear[H[2J[3J[1m[7m%[27m[1m[0m                                                                                                                       ]2;trung@HP:~/workspace/dockerPractice/devopsWithDocker/material-applications/example-backend]1;..ample-backend[0m[27m[24m[J
+[1m[0m[1m[36mmaterial-applications/example-backend[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[0m[39m[1m [0m
+[1m[0m[1m[32m➜ [0m[32m[39m[1m[0m[K[?1h=[?2004h[32md[39m[90mocker run --rm -it -p 8080:8080 --name backend-project backend-project[39m[70D[33md[33mo[39m[1m[31md[1m[31mo[1m[31mi[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [68D[1m[31mi[1m[31mc[0m[39m[1m[31mc[1m[31mk[0m[39m[1m[31mk[1m[31me[0m[39m[1m[31me[1m[31mr[0m[39m [1m[31me[0m[39m[0m[39m [1m[31mk[0m[39m[0m[39m [1m[31mc[0m[39m[0m[39m [1m[31mi[0m[39m[0m[39m [0m[33md[0m[33mo[39m[0m[90mc[90mker run --rm -it -p 8080:8080 --name backend-project backend-project[39m[69D[1m[31md[1m[31mo[1m[31mc[0m[39m[1m[31mc[1m[31mk[0m[39m[1m[31mk[1m[31me[0m[39m[0m[32md[0m[32mo[0m[32mc[0m[32mk[0m[32me[32mr[39m[39m [39m[4mp[24m[90ms[90m [90m-[90ma[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [63D[24mp[39ms[39m [39m-[39ma [90m| grep mongodb[39m[14D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [15D[?1l>[?2004l
+]2;docker ps -a]1;dockerCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[1m[7m%[27m[1m[0m                                                                                                                       ]2;trung

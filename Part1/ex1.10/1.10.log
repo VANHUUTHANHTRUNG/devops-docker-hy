@@ -1,0 +1,17 @@
+Script started on 2021-06-29 15:52:01+03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="94" LINES="49"]
+[1m[7m%[27m[1m[0m                                                                                              ]2;trung@HP:~/workspace/dockerPractice/devopsWithDocker/Part1/ex1.10]1;../Part1/ex1.10[0m[27m[24m[J
+[1m[0m[1m[36mdevopsWithDocker/Part1/ex1.10[0m[36m[39m[1m [0m
+[1m[0m[1m[32m➜ [0m[32m[39m[1m[0m[K[?1h=[?2004h[32md[39m[90mocker run --rm -p 8080:8080 --name simple-web-service devopsdockeruh/simple-web-service ser[90mv[90mer[39m[K[A[33md[33mo[39m[1m[31md[1m[31mo[1m[31mc[0m[39m[1m[31mc[1m[31mk[0m[39m[1m[31mk[1m[31me[0m[39m[0m[32md[0m[32mo[0m[32mc[0m[32mk[0m[32me[32mr[39m[39m [39mr[39mu[39mn[39m [39m-[39m-[39mr[39mm[39m [39m-[39mp[39m [39m8[39m0[39m8[39m0[39m:[39m8[39m0[39m8[39m0[39m [39m-[39m-[39mn[39ma[39mm[39me[39m [39ms[39mi[39mm[39mp[39ml[39me[39m-[39mw[39me[39mb[39m-[39ms[39me[39mr[39mv[39mi[39mc[39me[39m [39md[39me[39mv[39mo[39mp[39ms[39md[39mo[39mc[39mk[39me[39mr[39mu[39mh[39m/[39ms[39mi[39mm[39mp[39ml[39me[39m-[39mw[39me[39mb[39m-[39ms[39me[39mr[39mv[39mi[39mc[39me[39m [39ms[39me[39mrv[39me[39mr[?1l>[?2004l
+]2;docker run --rm -p 8080:8080 --name simple-web-service  server]1;docker[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /*path                    --> server.Start.func1 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+^C[1m[7m%[27m[1m[0m                                                                                              ]2;trung@HP:~/workspace/dockerPractice/devopsWithDocker/Part1/ex1.10]1;../Part1/ex1.10[0m[27m[24m[J
+[1m[0m[1m[36mdevopsWithDocker/Part1/ex1.10[0m[36m[39m[1m [0m[1mtook [0m[1m[33m3s[0m[33m[39m[1m [0m
+[1m[0m[1m[31m➜ [0m[31m[39m[1m[0m[K[?1h=[?2004h[1m[31me[0m[39m[90mxit[39m[0m[32me[32mx[39m[1m[31me[1m[31mx[1m[31mi[0m[39m[0m[32me[0m[32mx[0m[32mi[32mt[39m [?1l>[?2004l
+]2;exit]1;exit
+Script done on 2021-06-29 15:52:10+03:00 [COMMAND_EXIT_CODE="2"]

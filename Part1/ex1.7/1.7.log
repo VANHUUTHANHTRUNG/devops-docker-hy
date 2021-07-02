@@ -1,0 +1,35 @@
+Script started on 2021-06-29 10:42:30+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="118" LINES="44"]
+[1m[7m%[27m[1m[0m                                                                                                                      ]2;trung@HP:~/workspace/dockerPractice/devopsWithDocker/Part1]1;..hDocker/Part1[0m[27m[24m[J
+[1m[0m[1m[36mdockerPractice/devopsWithDocker/Part1[0m[36m[39m[1m [0m[1mon [0m[1m[36m🐳 v20.10.7[0m[36m[39m[1m [0m
+[1m[0m[1m[32m➜ [0m[32m[39m[1m[0m[K[?1h=[?2004h[32md[39m[90mocker image rm web-server[39m[25D[33md[33mo[39m[1m[31md[1m[31mo[1m[31mc[0m[39m[1m[31mc[1m[31mk[0m[39m[1m[31mc[0m[39m[0m[90mk[0m[33md[0m[33mo[39m[0m[90mc[32md[39m[90mo[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [26D[1m[31mc[0m[39m[90mlear[39m[1m[31mc[1m[31ma[0m[39m[90mt[90m [90m/[90mhome/trung/.config/node-opcua-default-nodejs/PKI/own/certs/client_certificate.pem[39m[84D[0m[32mc[0m[32ma[32mt[39m[39m [39m[4mD[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [81D[4mD[4mo[24m[4mo[4mckerfile[24m[1m [0m[0m [?1l>[?2004l
+]2;cat Dockerfile]1;catFROM devopsdockeruh/simple-web-service:alpine
+
+CMD server
+[1m[7m%[27m[1m[0m                                                                                                                      ]2;trung@HP:~/workspace/dockerPractice/devopsWithDocker/Part1]1;..hDocker/Part1[0m[27m[24m[J
+[1m[0m[1m[36mdockerPractice/devopsWithDocker/Part1[0m[36m[39m[1m [0m[1mon [0m[1m[36m🐳 v20.10.7[0m[36m[39m[1m [0m
+[1m[0m[1m[32m➜ [0m[32m[39m[1m[0m[K[?1h=[?2004h[32md[39m[90mocker image rm web-server[39m[25D[33md[33mo[39m[1m[31md[1m[31mo[1m[31mc[0m[39m[1m[31mc[1m[31mk[0m[39m[1m[31mk[1m[31me[0m[39m[0m[32md[0m[32mo[0m[32mc[0m[32mk[0m[32me[32mr[39m[39m [39mb[90mu[90mi[90ml[90md[90m [90m.[90m [90m-[90mt[90m [90mw[90me[90mb[90m-[90ms[90me[90mr[90mv[90mer[39m[20D[39mu[39mi[39ml[39md[39m [39m[4m.[24m[39m [39m-[39mt[39m [39mw[39me[39mb[39m-[39ms[39me[39mr[39mv[39me[39mr[?1l>[?2004l
+]2;docker build . -t web-server]1;dockerSending build context to Docker daemon  97.28kB
+Step 1/2 : FROM devopsdockeruh/simple-web-service:alpine
+ ---> fd312adc88e0
+Step 2/2 : CMD server
+ ---> Running in 5677ae39bf43
+Removing intermediate container 5677ae39bf43
+ ---> 33238148c177
+Successfully built 33238148c177
+Successfully tagged web-server:latest
+[1m[7m%[27m[1m[0m                                                                                                                      ]2;trung@HP:~/workspace/dockerPractice/devopsWithDocker/Part1]1;..hDocker/Part1[0m[27m[24m[J
+[1m[0m[1m[36mdockerPractice/devopsWithDocker/Part1[0m[36m[39m[1m [0m[1mon [0m[1m[36m🐳 v20.10.7[0m[36m[39m[1m [0m
+[1m[0m[1m[32m➜ [0m[32m[39m[1m[0m[K[?1h=[?2004h[32md[39m[90mocker build . -t web-server[39m[27D[33md[33mo[39m[1m[31md[1m[31mo[1m[31mc[0m[39m[1m[31mc[1m[31mk[0m[39m[1m[31mk[1m[31me[0m[39m[0m[32md[0m[32mo[0m[32mc[0m[32mk[0m[32me[32mr[39m[39m [90m [39m[39m [39mr[90mu[90mn[39m[7P[11C       [20D[39mu[39mn[39m [39mw[39me[39mb[39m-[39ms[39me[39mr[39mv[39me[39mr[1C web-server[11D- web-server[11Da web-server[11D[P[11C [12D- web-server[11Dr web-server[11Dm web-server[11D[1C web-server[11D- web-server[11D[P[11C [12D[P[10C [12D[?1l>[?2004l
+]2;docker run --rm web-server]1;docker[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /*path                    --> server.Start.func1 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+^C[1m[7m%[27m[1m[0m                                                                                                                      ]2;trung@HP:~/workspace/dockerPractice/devopsWithDocker/Part1]1;..hDocker/Part1[0m[27m[24m[J
+[1m[0m[1m[36mdockerPractice/devopsWithDocker/Part1[0m[36m[39m[1m [0m[1mon [0m[1m[36m🐳 v20.10.7[0m[36m[39m[1m [0m[1mtook [0m[1m[33m6s[0m[33m[39m[1m [0m
+[1m[0m[1m[31m➜ [0m[31m[39m[1m[0m[K[?1h=[?2004h[1m[31me[0m[39m[90mxit[39m[0m[32me[32mx[39m[1m[31me[1m[31mx[1m[31mi[0m[39m[0m[32me[0m[32mx[0m[32mi[32mt[39m [?1l>[?2004l
+]2;exit]1;exit
+Script done on 2021-06-29 10:43:24+03:00 [COMMAND_EXIT_CODE="2"]
