@@ -10,3 +10,6 @@
 [submodule "Part2/ex2.7/ml-kurkkumopo-training"]
 	path = Part2/ex2.7/ml-kurkkumopo-training
 	url = https://github.com/docker-hy/ml-kurkkumopo-training.git
+[submodule "material-applications"]
+	path = material-applications
+	url = https://github.com/docker-hy/material-applications.git
