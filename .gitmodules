@@ -13,3 +13,6 @@
 [submodule "material-applications"]
 	path = material-applications
 	url = https://github.com/docker-hy/material-applications.git
+[submodule "Part3/docker-hy.github.io"]
+	path = Part3/docker-hy.github.io
+	url = https://github.com/docker-hy/docker-hy.github.io.git
