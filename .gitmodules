@@ -1,3 +1,12 @@
 [submodule "Part1/ex1.15/node-express-app"]
 	path = Part1/ex1.15/node-express-app
 	url = git@github.com:VANHUUTHANHTRUNG/node-express-app.git
+[submodule "Part2/ex2.7/ml-kurkkumopo-frontend"]
+	path = Part2/ex2.7/ml-kurkkumopo-frontend
+	url = https://github.com/docker-hy/ml-kurkkumopo-frontend.git
+[submodule "Part2/ex2.7/ml-kurkkumopo-backend"]
+	path = Part2/ex2.7/ml-kurkkumopo-backend
+	url = https://github.com/docker-hy/ml-kurkkumopo-backend.git
+[submodule "Part2/ex2.7/ml-kurkkumopo-training"]
+	path = Part2/ex2.7/ml-kurkkumopo-training
+	url = https://github.com/docker-hy/ml-kurkkumopo-training.git
