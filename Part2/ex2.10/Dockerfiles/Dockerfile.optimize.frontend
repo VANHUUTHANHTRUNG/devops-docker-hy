@@ -9,8 +9,15 @@ COPY . .
 RUN npm install && \
     REACT_APP_BACKEND_URL=http://localhost/api npm run build && \
     npm install -g serve && \
-    rm -rf node_modules && \
-    useradd -m appuser
+    apt-get install -y ca-certificates && \
+    apt-get purge -y --auto-remove curl && \ 
+    rm -rf /var/lib/apt/lists/* 
+
+RUN rm -rf /usr/src/app/node_modules && \
+    rm /usr/src/app/package.json && \
+    rm /usr/src/app/package-lock.json
+
+RUN useradd -m appuser
 
 USER appuser
 

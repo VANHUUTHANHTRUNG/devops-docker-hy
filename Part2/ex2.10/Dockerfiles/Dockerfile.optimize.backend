@@ -9,6 +9,9 @@ ENV REQUEST_ORIGIN=http://localhost:5000
 COPY . .
 
 RUN go build && \
+    apt-get install -y ca-certificates && \
+    apt-get purge -y --auto-remove curl && \ 
+    rm -rf /var/lib/apt/lists/* && \
     useradd -m appuser
 
 USER appuser
