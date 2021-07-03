@@ -1,0 +1,26 @@
+FROM golang:1.16-alpine
+
+WORKDIR /usr/src/app
+
+EXPOSE 8080
+
+ENV REQUEST_ORIGIN=http://localhost:5000
+
+COPY . .
+
+RUN go build && \
+    rm -rf /var/lib/apt/lists/* && \
+    rm /usr/src/app/app.go && \
+    rm /usr/src/app/app_test.go && \
+    rm -rf /usr/src/app/cache && \    
+    rm -rf /usr/src/app/common && \    
+    rm -rf /usr/src/app/controller && \
+    rm -rf /usr/src/app/pgconnection && \        
+    rm -rf /usr/src/app/router && \
+    rm /usr/src/app/go.mod && \
+    rm /usr/src/app/go.sum && \
+    addgroup -S appgroup && adduser -S appuser -G appgroup
+
+USER appuser
+
+ENTRYPOINT ["./server"] 

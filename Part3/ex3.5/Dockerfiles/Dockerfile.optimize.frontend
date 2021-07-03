@@ -1,0 +1,23 @@
+FROM node:14-alpine
+
+WORKDIR /usr/src/app
+
+EXPOSE 5000
+
+COPY . .
+
+RUN npm install && \
+    REACT_APP_BACKEND_URL=http://localhost/api npm run build && \
+    npm install -g serve && \
+    apk add ca-certificates && \
+    apk del curl && \ 
+    rm -rf /var/lib/apt/lists/* && \
+    rm -rf /usr/src/app/node_modules && \
+    rm /usr/src/app/package.json && \
+    rm /usr/src/app/package-lock.json && \
+    rm -rf /usr/src/app/src/ && \
+    rm -rf /usr/src/app/public && \
+    addgroup -S appgroup && adduser -S appuser -G appgroup
+USER appuser
+
+CMD ["serve", "-s", "-l", "5000", "build"]
