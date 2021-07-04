@@ -1,0 +1,21 @@
+FROM golang:1.16-alpine AS builder
+
+WORKDIR /usr/src/app
+
+EXPOSE 8080
+
+ENV REQUEST_ORIGIN=http://localhost:5000
+
+COPY . .
+
+RUN go build 
+
+FROM alpine:3.11.3
+
+COPY --from=builder /usr/src/app/server /server
+
+RUN addgroup -S appgroup && adduser -S appuser -G appgroup
+
+USER appuser
+
+ENTRYPOINT ["./server"] 

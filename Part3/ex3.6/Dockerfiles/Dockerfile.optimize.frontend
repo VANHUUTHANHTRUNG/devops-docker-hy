@@ -1,0 +1,21 @@
+FROM node:14-alpine AS builder
+
+WORKDIR /usr/src/app
+
+EXPOSE 5000
+
+COPY . .
+
+RUN npm install && \
+    REACT_APP_BACKEND_URL=http://localhost/api npm run build && \
+    npm install -g serve
+
+FROM alpine:3.11.3
+
+COPY --from=builder /usr/src/app/build /build
+
+RUN    addgroup -S appgroup && adduser -S appuser -G appgroup
+
+USER appuser
+
+CMD ["serve", "-s", "-l", "5000", "build"]

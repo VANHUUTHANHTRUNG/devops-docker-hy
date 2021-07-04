@@ -1,0 +1,53 @@
+version: "3.8"
+
+services: # In default netwokr, containers are reachable and discoverable
+  front:
+    build:
+      context: $PWD/../../material-applications/example-frontend
+      dockerfile: $PWD/Dockerfiles/Dockerfile.optimize.frontend
+    ports:
+      - 5000:5000
+    container_name: frontend
+
+  back:
+    build:
+      context: $PWD/../../material-applications/example-backend
+      dockerfile: $PWD/Dockerfiles/Dockerfile.optimize.backend
+    environment:
+      - REDIS_HOST=redis # same as hostname, not the container_name
+      - POSTGRES_HOST=postgres
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=example
+    ports:
+      - 8080:8080
+    container_name: backend
+
+  nginx:
+    container_name: nginx_proxy
+    image: nginx
+    restart: always
+    depends_on:
+      - front
+      - back
+      - redis
+      - postgres
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+
+  redis: # hostname = container_name
+    image: redis
+    ports:
+      - 6379:6379
+    container_name: redisdb
+
+  postgres:
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=example
+      - POSTGRES_USER=user
+    ports:
+      - 5432:5432
+    container_name: postgresdb
+
