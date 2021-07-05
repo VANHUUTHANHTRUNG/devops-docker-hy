@@ -1,3 +1,5 @@
+*Images were build in material-appllication examples dir then move here to submit*
+
 # Steps #
 - Change to alpine version of images
 - Modify `apk` commands instead of `apt` commands
